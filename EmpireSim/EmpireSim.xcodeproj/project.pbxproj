@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		426D1AF829FF4CCA00D94891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1AF729FF4CCA00D94891 /* AppDelegate.swift */; };
+		426D1AFA29FF4CCA00D94891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1AF929FF4CCA00D94891 /* SceneDelegate.swift */; };
+		426D1AFF29FF4CCA00D94891 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426D1AFD29FF4CCA00D94891 /* Main.storyboard */; };
+		426D1B0129FF4CCE00D94891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 426D1B0029FF4CCE00D94891 /* Assets.xcassets */; };
+		426D1B0429FF4CCE00D94891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 426D1B0229FF4CCE00D94891 /* LaunchScreen.storyboard */; };
+		426D1B0F29FF4CCF00D94891 /* EmpireSimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B0E29FF4CCF00D94891 /* EmpireSimTests.swift */; };
+		426D1B1929FF4CCF00D94891 /* EmpireSimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B1829FF4CCF00D94891 /* EmpireSimUITests.swift */; };
+		426D1B1B29FF4CCF00D94891 /* EmpireSimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B1A29FF4CCF00D94891 /* EmpireSimUITestsLaunchTests.swift */; };
+		426D1B2829FF512300D94891 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B2729FF512300D94891 /* AppUtility.swift */; };
+		426D1B2A29FF563100D94891 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B2929FF563100D94891 /* LoginViewController.swift */; };
+		426D1B2C29FF570C00D94891 /* gameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B2B29FF570C00D94891 /* gameModel.swift */; };
+		426D1B2E29FF576000D94891 /* savedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B2D29FF576000D94891 /* savedData.swift */; };
+		426D1B3029FF5A1100D94891 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D1B2F29FF5A1100D94891 /* GameViewController.swift */; };
+		426D1B3A29FF602700D94891 /* woodEdit.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 426D1B3729FF602700D94891 /* woodEdit.jpeg */; };
+		426D1B3B29FF602700D94891 /* foodEdit.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 426D1B3829FF602700D94891 /* foodEdit.jpeg */; };
+		426D1B3C29FF602700D94891 /* stoneEdit.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 426D1B3929FF602700D94891 /* stoneEdit.jpeg */; };
+		42AEFA5F2A0B1002009B9BEF /* PopulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEFA5E2A0B1002009B9BEF /* PopulationViewController.swift */; };
+		42AEFA652A0B15C1009B9BEF /* townHall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA642A0B15C1009B9BEF /* townHall.jpg */; };
+		42AEFA672A0B40CA009B9BEF /* barn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA662A0B40CA009B9BEF /* barn.jpeg */; };
+		42AEFA6A2A0B40D6009B9BEF /* cabin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA682A0B40D6009B9BEF /* cabin.jpeg */; };
+		42AEFA6B2A0B40D6009B9BEF /* quarry.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA692A0B40D6009B9BEF /* quarry.jpeg */; };
+		42AEFA6D2A0B4113009B9BEF /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA6C2A0B4113009B9BEF /* house.jpg */; };
+		42AEFA6F2A0B44D4009B9BEF /* BuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEFA6E2A0B44D4009B9BEF /* BuildingViewController.swift */; };
+		42AEFA712A0C3EAC009B9BEF /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEFA702A0C3EAC009B9BEF /* HouseViewController.swift */; };
+		42AEFA772A0D4E86009B9BEF /* tent.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA722A0D4E85009B9BEF /* tent.png */; };
+		42AEFA782A0D4E86009B9BEF /* tannery.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA732A0D4E85009B9BEF /* tannery.png */; };
+		42AEFA792A0D4E86009B9BEF /* archer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA742A0D4E85009B9BEF /* archer.jpg */; };
+		42AEFA7A2A0D4E86009B9BEF /* blacksmith2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA752A0D4E85009B9BEF /* blacksmith2.png */; };
+		42AEFA7B2A0D4E86009B9BEF /* monastery.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA762A0D4E86009B9BEF /* monastery.png */; };
+		42AEFA7D2A0D4ED7009B9BEF /* war.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA7C2A0D4ED6009B9BEF /* war.jpg */; };
+		42AEFA7F2A0D5256009B9BEF /* tannery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA7E2A0D5256009B9BEF /* tannery.jpg */; };
+		42AEFA812A0D525D009B9BEF /* blacksmith2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AEFA802A0D525D009B9BEF /* blacksmith2.jpg */; };
+		42AEFA832A0DB981009B9BEF /* CombatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEFA822A0DB981009B9BEF /* CombatViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		426D1B0B29FF4CCF00D94891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426D1AEC29FF4CCA00D94891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 426D1AF329FF4CCA00D94891;
+			remoteInfo = EmpireSim;
+		};
+		426D1B1529FF4CCF00D94891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 426D1AEC29FF4CCA00D94891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 426D1AF329FF4CCA00D94891;
+			remoteInfo = EmpireSim;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		426D1AF429FF4CCA00D94891 /* EmpireSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpireSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D1AF729FF4CCA00D94891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		426D1AF929FF4CCA00D94891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		426D1AFE29FF4CCA00D94891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		426D1B0029FF4CCE00D94891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		426D1B0329FF4CCE00D94891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		426D1B0529FF4CCE00D94891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		426D1B0A29FF4CCF00D94891 /* EmpireSimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireSimTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D1B0E29FF4CCF00D94891 /* EmpireSimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireSimTests.swift; sourceTree = "<group>"; };
+		426D1B1429FF4CCF00D94891 /* EmpireSimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireSimUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		426D1B1829FF4CCF00D94891 /* EmpireSimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireSimUITests.swift; sourceTree = "<group>"; };
+		426D1B1A29FF4CCF00D94891 /* EmpireSimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireSimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		426D1B2729FF512300D94891 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
+		426D1B2929FF563100D94891 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		426D1B2B29FF570C00D94891 /* gameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameModel.swift; sourceTree = "<group>"; };
+		426D1B2D29FF576000D94891 /* savedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedData.swift; sourceTree = "<group>"; };
+		426D1B2F29FF5A1100D94891 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		426D1B3729FF602700D94891 /* woodEdit.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woodEdit.jpeg; sourceTree = "<group>"; };
+		426D1B3829FF602700D94891 /* foodEdit.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foodEdit.jpeg; sourceTree = "<group>"; };
+		426D1B3929FF602700D94891 /* stoneEdit.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stoneEdit.jpeg; sourceTree = "<group>"; };
+		42AEFA5E2A0B1002009B9BEF /* PopulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewController.swift; sourceTree = "<group>"; };
+		42AEFA642A0B15C1009B9BEF /* townHall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = townHall.jpg; sourceTree = "<group>"; };
+		42AEFA662A0B40CA009B9BEF /* barn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barn.jpeg; sourceTree = "<group>"; };
+		42AEFA682A0B40D6009B9BEF /* cabin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cabin.jpeg; sourceTree = "<group>"; };
+		42AEFA692A0B40D6009B9BEF /* quarry.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quarry.jpeg; sourceTree = "<group>"; };
+		42AEFA6C2A0B4113009B9BEF /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
+		42AEFA6E2A0B44D4009B9BEF /* BuildingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingViewController.swift; sourceTree = "<group>"; };
+		42AEFA702A0C3EAC009B9BEF /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		42AEFA722A0D4E85009B9BEF /* tent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tent.png; sourceTree = "<group>"; };
+		42AEFA732A0D4E85009B9BEF /* tannery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tannery.png; sourceTree = "<group>"; };
+		42AEFA742A0D4E85009B9BEF /* archer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = archer.jpg; sourceTree = "<group>"; };
+		42AEFA752A0D4E85009B9BEF /* blacksmith2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blacksmith2.png; sourceTree = "<group>"; };
+		42AEFA762A0D4E86009B9BEF /* monastery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monastery.png; sourceTree = "<group>"; };
+		42AEFA7C2A0D4ED6009B9BEF /* war.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = war.jpg; sourceTree = "<group>"; };
+		42AEFA7E2A0D5256009B9BEF /* tannery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tannery.jpg; sourceTree = "<group>"; };
+		42AEFA802A0D525D009B9BEF /* blacksmith2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blacksmith2.jpg; sourceTree = "<group>"; };
+		42AEFA822A0DB981009B9BEF /* CombatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		426D1AF129FF4CCA00D94891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D1B0729FF4CCF00D94891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D1B1129FF4CCF00D94891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426D1AEB29FF4CCA00D94891 = {
+			isa = PBXGroup;
+			children = (
+				426D1AF629FF4CCA00D94891 /* EmpireSim */,
+				426D1B0D29FF4CCF00D94891 /* EmpireSimTests */,
+				426D1B1729FF4CCF00D94891 /* EmpireSimUITests */,
+				426D1AF529FF4CCA00D94891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		426D1AF529FF4CCA00D94891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				426D1AF429FF4CCA00D94891 /* EmpireSim.app */,
+				426D1B0A29FF4CCF00D94891 /* EmpireSimTests.xctest */,
+				426D1B1429FF4CCF00D94891 /* EmpireSimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		426D1AF629FF4CCA00D94891 /* EmpireSim */ = {
+			isa = PBXGroup;
+			children = (
+				426D1AF729FF4CCA00D94891 /* AppDelegate.swift */,
+				42AEFA6E2A0B44D4009B9BEF /* BuildingViewController.swift */,
+				426D1B2B29FF570C00D94891 /* gameModel.swift */,
+				426D1AF929FF4CCA00D94891 /* SceneDelegate.swift */,
+				42AEFA702A0C3EAC009B9BEF /* HouseViewController.swift */,
+				42AEFA822A0DB981009B9BEF /* CombatViewController.swift */,
+				426D1B2F29FF5A1100D94891 /* GameViewController.swift */,
+				426D1B2929FF563100D94891 /* LoginViewController.swift */,
+				42AEFA5E2A0B1002009B9BEF /* PopulationViewController.swift */,
+				426D1AFD29FF4CCA00D94891 /* Main.storyboard */,
+				426D1B0029FF4CCE00D94891 /* Assets.xcassets */,
+				426D1B0229FF4CCE00D94891 /* LaunchScreen.storyboard */,
+				426D1B0529FF4CCE00D94891 /* Info.plist */,
+				426D1B2729FF512300D94891 /* AppUtility.swift */,
+				426D1B3829FF602700D94891 /* foodEdit.jpeg */,
+				42AEFA6C2A0B4113009B9BEF /* house.jpg */,
+				426D1B3929FF602700D94891 /* stoneEdit.jpeg */,
+				426D1B3729FF602700D94891 /* woodEdit.jpeg */,
+				42AEFA742A0D4E85009B9BEF /* archer.jpg */,
+				42AEFA7E2A0D5256009B9BEF /* tannery.jpg */,
+				42AEFA752A0D4E85009B9BEF /* blacksmith2.png */,
+				42AEFA762A0D4E86009B9BEF /* monastery.png */,
+				42AEFA802A0D525D009B9BEF /* blacksmith2.jpg */,
+				42AEFA732A0D4E85009B9BEF /* tannery.png */,
+				42AEFA722A0D4E85009B9BEF /* tent.png */,
+				42AEFA682A0B40D6009B9BEF /* cabin.jpeg */,
+				42AEFA7C2A0D4ED6009B9BEF /* war.jpg */,
+				42AEFA692A0B40D6009B9BEF /* quarry.jpeg */,
+				42AEFA662A0B40CA009B9BEF /* barn.jpeg */,
+				42AEFA642A0B15C1009B9BEF /* townHall.jpg */,
+				426D1B2D29FF576000D94891 /* savedData.swift */,
+			);
+			path = EmpireSim;
+			sourceTree = "<group>";
+		};
+		426D1B0D29FF4CCF00D94891 /* EmpireSimTests */ = {
+			isa = PBXGroup;
+			children = (
+				426D1B0E29FF4CCF00D94891 /* EmpireSimTests.swift */,
+			);
+			path = EmpireSimTests;
+			sourceTree = "<group>";
+		};
+		426D1B1729FF4CCF00D94891 /* EmpireSimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				426D1B1829FF4CCF00D94891 /* EmpireSimUITests.swift */,
+				426D1B1A29FF4CCF00D94891 /* EmpireSimUITestsLaunchTests.swift */,
+			);
+			path = EmpireSimUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		426D1AF329FF4CCA00D94891 /* EmpireSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426D1B1E29FF4CCF00D94891 /* Build configuration list for PBXNativeTarget "EmpireSim" */;
+			buildPhases = (
+				426D1AF029FF4CCA00D94891 /* Sources */,
+				426D1AF129FF4CCA00D94891 /* Frameworks */,
+				426D1AF229FF4CCA00D94891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmpireSim;
+			productName = EmpireSim;
+			productReference = 426D1AF429FF4CCA00D94891 /* EmpireSim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		426D1B0929FF4CCF00D94891 /* EmpireSimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426D1B2129FF4CCF00D94891 /* Build configuration list for PBXNativeTarget "EmpireSimTests" */;
+			buildPhases = (
+				426D1B0629FF4CCF00D94891 /* Sources */,
+				426D1B0729FF4CCF00D94891 /* Frameworks */,
+				426D1B0829FF4CCF00D94891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				426D1B0C29FF4CCF00D94891 /* PBXTargetDependency */,
+			);
+			name = EmpireSimTests;
+			productName = EmpireSimTests;
+			productReference = 426D1B0A29FF4CCF00D94891 /* EmpireSimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		426D1B1329FF4CCF00D94891 /* EmpireSimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 426D1B2429FF4CCF00D94891 /* Build configuration list for PBXNativeTarget "EmpireSimUITests" */;
+			buildPhases = (
+				426D1B1029FF4CCF00D94891 /* Sources */,
+				426D1B1129FF4CCF00D94891 /* Frameworks */,
+				426D1B1229FF4CCF00D94891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				426D1B1629FF4CCF00D94891 /* PBXTargetDependency */,
+			);
+			name = EmpireSimUITests;
+			productName = EmpireSimUITests;
+			productReference = 426D1B1429FF4CCF00D94891 /* EmpireSimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		426D1AEC29FF4CCA00D94891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					426D1AF329FF4CCA00D94891 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					426D1B0929FF4CCF00D94891 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 426D1AF329FF4CCA00D94891;
+					};
+					426D1B1329FF4CCF00D94891 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 426D1AF329FF4CCA00D94891;
+					};
+				};
+			};
+			buildConfigurationList = 426D1AEF29FF4CCA00D94891 /* Build configuration list for PBXProject "EmpireSim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 426D1AEB29FF4CCA00D94891;
+			productRefGroup = 426D1AF529FF4CCA00D94891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				426D1AF329FF4CCA00D94891 /* EmpireSim */,
+				426D1B0929FF4CCF00D94891 /* EmpireSimTests */,
+				426D1B1329FF4CCF00D94891 /* EmpireSimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		426D1AF229FF4CCA00D94891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AEFA6D2A0B4113009B9BEF /* house.jpg in Resources */,
+				42AEFA812A0D525D009B9BEF /* blacksmith2.jpg in Resources */,
+				42AEFA672A0B40CA009B9BEF /* barn.jpeg in Resources */,
+				42AEFA7B2A0D4E86009B9BEF /* monastery.png in Resources */,
+				42AEFA7F2A0D5256009B9BEF /* tannery.jpg in Resources */,
+				42AEFA7D2A0D4ED7009B9BEF /* war.jpg in Resources */,
+				42AEFA772A0D4E86009B9BEF /* tent.png in Resources */,
+				426D1B3B29FF602700D94891 /* foodEdit.jpeg in Resources */,
+				426D1B3C29FF602700D94891 /* stoneEdit.jpeg in Resources */,
+				42AEFA6B2A0B40D6009B9BEF /* quarry.jpeg in Resources */,
+				42AEFA792A0D4E86009B9BEF /* archer.jpg in Resources */,
+				42AEFA652A0B15C1009B9BEF /* townHall.jpg in Resources */,
+				426D1B3A29FF602700D94891 /* woodEdit.jpeg in Resources */,
+				426D1B0429FF4CCE00D94891 /* LaunchScreen.storyboard in Resources */,
+				42AEFA782A0D4E86009B9BEF /* tannery.png in Resources */,
+				42AEFA6A2A0B40D6009B9BEF /* cabin.jpeg in Resources */,
+				426D1B0129FF4CCE00D94891 /* Assets.xcassets in Resources */,
+				426D1AFF29FF4CCA00D94891 /* Main.storyboard in Resources */,
+				42AEFA7A2A0D4E86009B9BEF /* blacksmith2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D1B0829FF4CCF00D94891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D1B1229FF4CCF00D94891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		426D1AF029FF4CCA00D94891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AEFA6F2A0B44D4009B9BEF /* BuildingViewController.swift in Sources */,
+				426D1B3029FF5A1100D94891 /* GameViewController.swift in Sources */,
+				426D1B2829FF512300D94891 /* AppUtility.swift in Sources */,
+				42AEFA832A0DB981009B9BEF /* CombatViewController.swift in Sources */,
+				426D1AF829FF4CCA00D94891 /* AppDelegate.swift in Sources */,
+				42AEFA5F2A0B1002009B9BEF /* PopulationViewController.swift in Sources */,
+				42AEFA712A0C3EAC009B9BEF /* HouseViewController.swift in Sources */,
+				426D1B2A29FF563100D94891 /* LoginViewController.swift in Sources */,
+				426D1B2C29FF570C00D94891 /* gameModel.swift in Sources */,
+				426D1AFA29FF4CCA00D94891 /* SceneDelegate.swift in Sources */,
+				426D1B2E29FF576000D94891 /* savedData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D1B0629FF4CCF00D94891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426D1B0F29FF4CCF00D94891 /* EmpireSimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		426D1B1029FF4CCF00D94891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426D1B1B29FF4CCF00D94891 /* EmpireSimUITestsLaunchTests.swift in Sources */,
+				426D1B1929FF4CCF00D94891 /* EmpireSimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		426D1B0C29FF4CCF00D94891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 426D1AF329FF4CCA00D94891 /* EmpireSim */;
+			targetProxy = 426D1B0B29FF4CCF00D94891 /* PBXContainerItemProxy */;
+		};
+		426D1B1629FF4CCF00D94891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 426D1AF329FF4CCA00D94891 /* EmpireSim */;
+			targetProxy = 426D1B1529FF4CCF00D94891 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		426D1AFD29FF4CCA00D94891 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426D1AFE29FF4CCA00D94891 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		426D1B0229FF4CCE00D94891 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				426D1B0329FF4CCE00D94891 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		426D1B1C29FF4CCF00D94891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		426D1B1D29FF4CCF00D94891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		426D1B1F29FF4CCF00D94891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 729M88PKVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmpireSim/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Meenan.EmpireSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		426D1B2029FF4CCF00D94891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 729M88PKVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmpireSim/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Meenan.EmpireSim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		426D1B2229FF4CCF00D94891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 729M88PKVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Meenan.EmpireSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpireSim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmpireSim";
+			};
+			name = Debug;
+		};
+		426D1B2329FF4CCF00D94891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 729M88PKVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Meenan.EmpireSimTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpireSim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EmpireSim";
+			};
+			name = Release;
+		};
+		426D1B2529FF4CCF00D94891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 729M88PKVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Meenan.EmpireSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpireSim;
+			};
+			name = Debug;
+		};
+		426D1B2629FF4CCF00D94891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 729M88PKVY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Meenan.EmpireSimUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpireSim;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		426D1AEF29FF4CCA00D94891 /* Build configuration list for PBXProject "EmpireSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D1B1C29FF4CCF00D94891 /* Debug */,
+				426D1B1D29FF4CCF00D94891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426D1B1E29FF4CCF00D94891 /* Build configuration list for PBXNativeTarget "EmpireSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D1B1F29FF4CCF00D94891 /* Debug */,
+				426D1B2029FF4CCF00D94891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426D1B2129FF4CCF00D94891 /* Build configuration list for PBXNativeTarget "EmpireSimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D1B2229FF4CCF00D94891 /* Debug */,
+				426D1B2329FF4CCF00D94891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		426D1B2429FF4CCF00D94891 /* Build configuration list for PBXNativeTarget "EmpireSimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				426D1B2529FF4CCF00D94891 /* Debug */,
+				426D1B2629FF4CCF00D94891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 426D1AEC29FF4CCA00D94891 /* Project object */;
+}
